@@ -29,7 +29,7 @@ for word in Controller.ReadAllWords():
     print(word)
 
 #自动登录
-itchat.auto_login(hotReload=True)
+itchat.auto_login(hotReload=True,enableCmdQR=True)
 print('登陆成功')
 #获取好友列表
 Friend = itchat.search_friends(name='何姗')[0]
